@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,a {
+    text-decoration: none;
+    color:gray;
+
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(photo/Mercedes-Benz-logo-cover-958x575.jpg);
+    background-repeat:repeat;
+    background-size:100% 100%;
+}
+
+.header .nav-bar{
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.header .nav-bar .logo{
+    margin-left: 50px;
+}
+
+.header .nav-bar .logo a img{
+    width: 450px;
+    height: 300px;
+    margin-top: 30px;
+
+}
+
+.header .nav-bar .logo a{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .nav-bar .menu ul li{
+    margin-right: 30px;
+}
+
+.header .nav-bar .menu ul li a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+.header .nav-bar .menu ul li a.active{
+    opacity: 1;
+}
+.header .nav-bar .menu ul li a:hover{
+    opacity: 1;
+}
+.header .nav-bar .social-media ul li i{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 5px;
+    border-radius: 50px;
+    text-align: center ;
+    align-items: center;
+    font-size: 20px;
+    background-color: #cac5c542;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .nav-bar .social-media ul li i:hover{
+    background-color: aliceblue;
+}
+
+.hero{
+    width: 100%;
+}
+.hero .row{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.hero .row .left-sec{
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.hero .row .left-sec h2{
+    font-size: 85px;
+    color:#fff;
+    text-transform: capitalize;
+}
+
+.hero .row .left-sec h2 span{
+    color: red;
+}
+
+.hero .row .left-sec p{
+    margin: 20px 0px;
+    color:#fff;
+    line-height: 30px;
+    padding-right: 150px;
+    font-size: 20px;
+}
+
+.hero .row .left-sec .discover-btn{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    padding:0 25px;
+    border:3px solid gray;
+    background-color: silver;
+    box-shadow: 5px 7px 20px #fff;
+}
+
+.hero .row .left-sec .discover-btn a{
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+
+.hero .row .left-sec .discover-btn span{
+    color:#fff;
+    font-size: 45px;
+}
+
+.hero .right-sec{
+    width: 60%;
+    padding-top: 100px;
+}
+
+.hero .right-sec .my-car{
+    width: 1000%;
+    position: relative;
+}
+.hero .right-sec .my-car .car-text{
+    width: 100%;
+}
+.hero .right-sec .my-car .car-text img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: block;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+}
+.hero .right-sec .my-car .cont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content:flex-start;
+    padding-top: 10%;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    color: #222;
+    opacity: 0;
+    transition: opacity 0.30s;
+    border-radius: 20%;
+}
+.hero .right-sec .my-car .cont:hover{
+    opacity: 1;
+}
+.hero .right-sec .my-car .cont h2{
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    padding-bottom: 20px;
+}
+.hero .right-sec .my-car .cont p{
+    font-size: 25px;
+    color: #fff;
+}
