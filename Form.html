@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get your AMG Now </title>
+        <link href="form.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+
+
+
+
+    </head>
+    <body>
+        <section class="header" id="header">
+            <div class="nav-bar">
+                <div class="logo">
+                     <a href="#"><img src="photo/amg-logo-png-img-free-png-amg-logo-png-png-collections-at-sccpre-cat-800x600.png" ></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="cars.html" >Cars</a></li>
+                        <li><a href="History.html">History</a></li>
+                        <li><a href="Tech.html">Tech</a></li>
+                        <li><a href="Form.html" class="active">Get your AMG</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://www.bing.com/ck/a?!&&p=420c37f51f3dd146JmltdHM9MTY4NTgzNjgwMCZpZ3VpZD0wMWFkMTdlZS0zNWMxLTYwMjktMjA2OS0wNWU1MzRjODYxMTYmaW5zaWQ9NTcxOA&ptn=3&hsh=3&fclid=01ad17ee-35c1-6029-2069-05e534c86116&psq=amg+history&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9tZXJjZWRlc2FtZy8&ntb=1" > <i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.bing.com/ck/a?!&&p=73776d9078dc1fbbJmltdHM9MTY4NTgzNjgwMCZpZ3VpZD0wMWFkMTdlZS0zNWMxLTYwMjktMjA2OS0wNWU1MzRjODYxMTYmaW5zaWQ9NTcxOQ&ptn=3&hsh=3&fclid=01ad17ee-35c1-6029-2069-05e534c86116&psq=amg+history&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vdXNlci9PZmZpY2lhbE1lcmNlZGVzQU1H&ntb=1" > <i class="fa fa-youtube"> </i></a></li>
+                        <li><a href="https://www.bing.com/ck/a?!&&p=20bc4302047eec0eJmltdHM9MTY4NTgzNjgwMCZpZ3VpZD0wMWFkMTdlZS0zNWMxLTYwMjktMjA2OS0wNWU1MzRjODYxMTYmaW5zaWQ9NTcxNg&ptn=3&hsh=3&fclid=01ad17ee-35c1-6029-2069-05e534c86116&psq=amg+history&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9NZXJjZWRlc0FNRw&ntb=1" > <i class="fa fa-twitter"> </i></a></li>
+                        <li><a href="https://www.bing.com/ck/a?!&&p=e10e1d1b2310fd77JmltdHM9MTY4NTgzNjgwMCZpZ3VpZD0wMWFkMTdlZS0zNWMxLTYwMjktMjA2OS0wNWU1MzRjODYxMTYmaW5zaWQ9NTcxNw&ptn=3&hsh=3&fclid=01ad17ee-35c1-6029-2069-05e534c86116&psq=amg+history&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL01lcmNlZGVzQU1HLw&ntb=1"><i class="fa fa-facebook"> </i></a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="form">
+            <h1>fill the the form to own one </h1>
+            <form name="f1">
+                
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="Phone">Phone Number*</label>
+              <input type="text" id="Phone" name="Phone" placeholder="Your Phone Number..">
+
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address..">
+          
+              <label for="Car">Car*</label>
+              <select id="Car" name="Car" >
+                <option value="select">select a car...</option>
+                <option value="a-class">A-class</option>
+                <option value="c-class">C-class</option>
+                <option value="e-class">E-class</option>
+                <option value="CLE-coupe">CLE-coupe</option>
+                <option value="GT">AMG GT</option>
+              </select>
+          
+              <label for="subject">Comments</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+           
+              
+              
+          
+              <input type="submit" value="Submit">
+              <x></x>             
+            </form>
+            
+            </div>
+<script>
+                const btn = document.querySelector("[type='submit']");
+
+                btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                let user = document.f1.name.value;
+                let phone = document.f1.Phone.value;
+                let email = document.querySelector('#email').value;
+                let car = document.querySelector('#Car').value;
+                let x=document.querySelector('x')
+                
+
+                const newElem = document.createElement("p");
+                if(user != '' && phone != '' && email!= '' && car != 'select'){
+                    x.textContent = `Your Submit is success Your name is ${user}. Your Phone number is ${phone}. Your Email Address is ${email}. You select ${car}`;
+                    
+                }
+                else{
+                   alert( `Your Submit is failed you miss some thing`)
+
+                }
+})
+
+</script>
+    </body>
+</html>
